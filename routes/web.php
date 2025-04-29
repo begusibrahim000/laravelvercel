@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
-    $response = Http::get('https://jsonplaceholder.typicode.com/posts');
-    $posts = $response->json();
-    return view('welcome', compact('posts'));
+    return view('welcome');
 });
+
+// Route::get('/', function () {
+//     $response = Http::get('https://jsonplaceholder.typicode.com/posts');
+//     $posts = $response->json();
+//     return view('welcome', compact('posts'));
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
