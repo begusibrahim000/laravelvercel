@@ -1,0 +1,4 @@
+web:
+  command: vendor/bin/heroku-php-apache2 public/
+  nixpacks:
+    description: "Run Laravel web server"
